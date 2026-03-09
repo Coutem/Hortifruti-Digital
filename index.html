@@ -1,75 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioFrutas - do Pomar para você</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioFrutas - Do Pomar para Você</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success bg-opacity-75 p-3 sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">BioFrutas</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#vitrine">Produto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cadastro">Anunciar Produto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="vitrine" class="container my-5">
-        <h2 class="text-center mb-4">Nossas Colheitas</h2>
-        <p class="text-center MB-4">PROMOÇÕES IMPERDÍVEIS</p>
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <span class="badge bg-danger position-absolute m-2">Promoção</span>
-                    <img src="FotodeFruta.jfif" class="card-img p-3" alt="Laranja">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase">Laranja Lima</h5>
-                        <p class="card-text text-muted small">Rica em Vitamina C, doce e suculenta.</p>
-                        <p class="h5 text-success">R$ 5,90 <small class="text-muted text-decoration-line-through fs-6">R$ 8,00</small></p>
-                        <button class="btn btn-outline-success w-100">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cadastro" class="bg-light py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 bg-white p-4 rounded shadow">
-                    <h3 class="mb-3">Cadstrar Nova Fruta</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Nome da Fruta</label>
-                            <input type="text" class="form-control" placeholder="Ex: Manga Palmer">
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <label class="form-label">Preço (KG)</label>
-                                <input type="number" class="form-control" placeholder="0.00">
-                            </div>
-                            <div class="col">
-                                <label class="form-label">Categoria</label>
-                                <select class="form-select">
-                                    <option>Frutas Cítricas</option>
-                                    <option>Frutas Tropicais</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">Salvar no Estoque</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+ 
+    <header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success p-3 sticky-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">BioFrutas</a>
+ 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+ 
+                <div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Início</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#vitrine">Produtos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#cadastro">Cadastrar Fruta</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+ 
+    <main>
+<section id="inicio" class="bg-light py-5">
+<div class="container text-center">
+<h1 class="fw-bold text-success">BioFrutas</h1>
+<p class="lead">Frutas frescas, saudáveis e direto do pomar para a sua mesa.</p>
+<a href="#vitrine" class="btn btn-success">Ver Produtos</a>
+</div>
+</section>
+ 
+        <section id="vitrine" class="container my-5">
+<h2 class="text-center mb-3">Nossas Colheitas</h2>
+<p class="text-center mb-4">Promoções imperdíveis da semana</p>
+ 
+            <div class="row g-4">
+<div class="col-12 col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm">
+<span class="badge bg-danger position-absolute m-2">Promoção</span>
+<img src="FotodeFruta.jpeg" class="card-img-top" alt="Laranja Lima">
+<div class="card-body text-center">
+<h5 class="card-title">Laranja Lima</h5>
+<p class="card-text text-muted">Rica em vitamina C, doce e suculenta.</p>
+<p class="h5 text-success">
+                                R$ 5,90
+<small class="text-muted text-decoration-line-through fs-6">R$ 8,00</small>
+</p>
+<button class="btn btn-outline-success w-100">Comprar</button>
+</div>
+</div>
+</div>
+ 
+                <div class="col-12 col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm">
+<span class="badge bg-danger position-absolute m-2">Promoção</span>
+<img src="maca.jpeg" class="card-img-top" alt="Maçã Gala">
+<div class="card-body text-center">
+<h5 class="card-title">Maçã Gala</h5>
+<p class="card-text text-muted">Fruta crocante, doce e muito saborosa.</p>
+<p class="h5 text-success">
+                                R$ 7,50
+<small class="text-muted text-decoration-line-through fs-6">R$ 9,00</small>
+</p>
+<button class="btn btn-outline-success w-100">Comprar</button>
+</div>
+</div>
+</div>
+ 
+                <div class="col-12 col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm">
+<img src="banana.jpg" class="card-img-top" alt="Banana Prata">
+<div class="card-body text-center">
+<h5 class="card-title">Banana Prata</h5>
+<p class="card-text text-muted">Fonte de potássio e fibras.</p>
+<p class="h5 text-success">R$ 4,20</p>
+<button class="btn btn-outline-success w-100">Comprar</button>
+</div>
+</div>
+</div>
+ 
+                <div class="col-12 col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm">
+<img src="Manga.jpeg" class="card-img-top" alt="Manga Palmer">
+<div class="card-body text-center">
+<h5 class="card-title">Manga Palmer</h5>
+<p class="card-text text-muted">Polpa macia, doce e perfeita para sucos.</p>
+<p class="h5 text-success">R$ 6,80</p>
+<button class="btn btn-outline-success w-100">Comprar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+ 
+        <section id="cadastro" class="bg-light py-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12 col-md-8 col-lg-6 bg-white p-4 rounded shadow">
+<h3 class="mb-4 text-center">Cadastrar Nova Fruta</h3>
+ 
+                        <form>
+<div class="mb-3">
+<label for="nomeFruta" class="form-label">Nome da Fruta</label>
+<input type="text" class="form-control" id="nomeFruta" placeholder="Ex: Manga Palmer" required>
+</div>
+ 
+                            <div class="mb-3">
+<label for="descricaoFruta" class="form-label">Descrição</label>
+<textarea class="form-control" id="descricaoFruta" rows="3" placeholder="Digite uma breve descrição da fruta" required></textarea>
+</div>
+ 
+                            <div class="row mb-3">
+<div class="col-md-6">
+<label for="precoFruta" class="form-label">Preço por KG</label>
+<input type="number" class="form-control" id="precoFruta" placeholder="0.00" min="0" step="0.01" required>
+</div>
+ 
+                                <div class="col-md-6">
+<label for="categoriaFruta" class="form-label">Categoria</label>
+<select class="form-select" id="categoriaFruta" required>
+<option value="">Selecione</option>
+<option>Frutas Cítricas</option>
+<option>Frutas Tropicais</option>
+<option>Frutas Vermelhas</option>
+<option>Frutas Secas</option>
+</select>
+</div>
+</div>
+ 
+                            <div class="row mb-3">
+<div class="col-md-6">
+<label for="quantidade" class="form-label">Quantidade em Estoque</label>
+<input type="number" class="form-control" id="quantidade" placeholder="Ex: 50" min="1" required>
+</div>
+ 
+                                <div class="col-md-6">
+<label for="imagem" class="form-label">Imagem da Fruta</label>
+<input type="file" class="form-control" id="imagem">
+</div>
+</div>
+ 
+                            <div class="mb-3">
+<label for="promocao" class="form-label">Produto em Promoção?</label>
+<select class="form-select" id="promocao" required>
+<option value="">Selecione</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+</div>
+ 
+                            <button type="submit" class="btn btn-success w-100">Salvar no Estoque</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+ 
+    <footer class="bg-success text-white text-center py-3">
+<p class="mb-0">&copy; 2026 BioFrutas - Do pomar para você</p>
+</footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
